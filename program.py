@@ -24,21 +24,18 @@ class ProfessionalApp:
         self.upload_btn = tk.Button(
             root, text="📁 Import & Process Local CSV", font=("Helvetica", 11, "bold"),
             fg="#11111b", bg="#89b4fa", activebackground="#b4befe",
-            width=32, pady=8, borderwidth=0, command=self.process_csv
-        )
+            width=32, pady=8, borderwidth=0, command=self.process_csv)
         self.upload_btn.pack(pady=10)
         
         self.api_btn = tk.Button(
-            root, text="🌐 Fetch Live Currency Exchange API", font=("Helvetica", 11, "bold"),
+            root, text="🌐 Fetch Live Currency Exchange", font=("Helvetica", 11, "bold"),
             fg="#11111b", bg="#a6e3a1", activebackground="#b4befe",
-            width=32, pady=8, borderwidth=0, command=self.fetch_live_api
-        )
+            width=32, pady=8, borderwidth=0, command=self.fetch_live_api)
         self.api_btn.pack(pady=10)
         
         self.footer_label = tk.Label(
             root, text="Python Automation Engine (API Enabled)", 
-            font=("Helvetica", 9, "italic"), fg="#585b70", bg="#1e1e2e"
-        )
+            font=("Helvetica", 9, "italic"), fg="#585b70", bg="#1e1e2e")
         self.footer_label.pack(side="bottom", pady=15)
 
     def process_csv(self):
