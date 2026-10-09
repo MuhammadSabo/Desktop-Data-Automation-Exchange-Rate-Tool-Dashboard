@@ -36,7 +36,7 @@ class ProfessionalApp:
         self.api_btn.pack(pady=10)
         
         self.footer_label = tk.Label(
-            root, text="Python Automation Engine v2.0 (API Enabled)", 
+            root, text="Python Automation Engine (API Enabled)", 
             font=("Helvetica", 9, "italic"), fg="#585b70", bg="#1e1e2e"
         )
         self.footer_label.pack(side="bottom", pady=15)
