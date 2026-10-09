@@ -1,0 +1,2 @@
+# Desktop-Data-Automation-Exchange-Rate-Tool-Dashboard
+The Executive Automation &amp; Intelligence Dashboard is a Python-based desktop application designed to bridge the gap between raw data and actionable business insights.  Additionally, it integrates a live web API to fetch and display real-time global financial data, demonstrating a seamless blend of local data automation and cloud-based intelligence.
