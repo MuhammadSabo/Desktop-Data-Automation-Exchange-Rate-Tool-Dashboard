@@ -10,8 +10,6 @@ class ProfessionalApp:
         self.root.title("Desktop Data Automation & Exchange Rate Tool Dashboard")
         self.root.geometry("700x420")
         self.root.configure(bg="#1e1e2e")
-        
-        # Title Label
         self.title_label = tk.Label(
             root, text="Enterprise Sales Automator & Live Exchange Portal", 
             font=("Helvetica", 16, "bold"), fg="#cdd6f4", bg="#1e1e2e"
@@ -23,8 +21,6 @@ class ProfessionalApp:
             font=("Helvetica", 10), fg="#a6adc8", bg="#1e1e2e"
         )
         self.info_label.pack(pady=5)
-
-        # Button 1: Local CSV Processing
         self.upload_btn = tk.Button(
             root, text="📁 Import & Process Local CSV", font=("Helvetica", 11, "bold"),
             fg="#11111b", bg="#89b4fa", activebackground="#b4befe",
@@ -32,7 +28,6 @@ class ProfessionalApp:
         )
         self.upload_btn.pack(pady=10)
         
-        # Button 2: Live API Integration
         self.api_btn = tk.Button(
             root, text="🌐 Fetch Live Currency Exchange API", font=("Helvetica", 11, "bold"),
             fg="#11111b", bg="#a6e3a1", activebackground="#b4befe",
@@ -40,7 +35,6 @@ class ProfessionalApp:
         )
         self.api_btn.pack(pady=10)
         
-        # Footer
         self.footer_label = tk.Label(
             root, text="Python Automation Engine v2.0 (API Enabled)", 
             font=("Helvetica", 9, "italic"), fg="#585b70", bg="#1e1e2e"
@@ -69,10 +63,8 @@ class ProfessionalApp:
 
     def fetch_live_api(self):
         try:
-            # Querying a live public financial exchange rate API
+            
             response = requests.get("https://open.er-api.com/v6/latest/USD", timeout=5)
-
-            # Raise an exception if the web request failed
             response.raise_for_status()
             
             data = response.json()
